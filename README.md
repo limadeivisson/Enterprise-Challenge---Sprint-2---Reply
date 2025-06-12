@@ -132,7 +132,7 @@ enterprise-challenge-reply/
 ├── src/
 │   └── Código sem comnetários_ESP32 usando Arduino IDE         # Código principal (Arduino)
 │   ├── Código comentado para ESP32 usando Arduino IDE          # Código Comentado (Arduino)
-├── README.md                        # Documentação principal
+├── README.md                                                   # Documentação principal
 ```
 
 ---
