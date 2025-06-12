@@ -122,15 +122,17 @@ void loop() {
 ## 💻 Estrutura do Projeto
 
 ```
-MonitoramentoESP32/
-├── imagens/
-│   ├── circuito.png
-│   └── monitor_serial.png
-├── dados_simulados_dht22.csv
-├── main.ino
-├── diagram.json
-├── platformio.ini
-├── README.md
+enterprise-challenge-reply/
+├── docs/
+│   ├── circuito.png                                            # Circuito do Wokwi
+│   ├── Registro da simulação                                   # Leitura no serial
+│   └── Gráfico de leituras simuladas.png                       # Gráfico gerado (pode ser em JPG ou PNG)
+├── dados/
+│   └── Dados simulados - Sprint 2.xlsx                         # XLSX com os dados simulados
+├── src/
+│   └── Código sem comnetários_ESP32 usando Arduino IDE         # Código principal (Arduino)
+│   ├── Código comentado para ESP32 usando Arduino IDE          # Código Comentado (Arduino)
+├── README.md                        # Documentação principal
 ```
 
 ---
