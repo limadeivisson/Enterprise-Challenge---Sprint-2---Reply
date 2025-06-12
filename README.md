@@ -1,25 +1,70 @@
 
-# Monitoramento Ambiental com ESP32 e Sensor DHT22
+# 🌡️ Projeto FIAP – Enterprise Challenge - Sprint 2 - Reply
 
-Este projeto simula um sistema básico de monitoramento ambiental utilizando a plataforma Wokwi. O objetivo 
-é demonstrar a coleta de dados de temperatura e umidade com um microcontrolador ESP32 e o sensor digital DHT22, refletindo um cenário industrial de monitoramento climático.
+[![Grupo](https://img.shields.io/badge/Grupo-77-green)]()
+[![Turma](https://img.shields.io/badge/Turma-1TIAOB%2F2025-blue)]()
+[![Status](https://img.shields.io/badge/Status-Concluído-success)]()
 
-## 🔧 Componentes Utilizados
-- **Placa de desenvolvimento ESP32**
-- **Sensor digital de temperatura e umidade DHT22**
-- **Plataforma de simulação: Wokwi**
+---
+## Fase 4  
+Período: 21/05/2025 a 11/06/2025
 
-## ⚙️ Objetivo
-Simular a coleta de dados ambientais (temperatura e umidade) em um ambiente industrial digitalizado, utilizando um circuito funcional com ESP32 e sensor DHT22, realizando análise inicial dos dados.
+## 👨‍🎓 Integrantes:
+- Deivisson Gonçalves Lima – RM565095 – [deivisson.engtele@gmail.com](mailto:deivisson.engtele@gmail.com)
+- Omar Calil Abrão Mustafá Assem – RM561375 – [ocama12@gmail.com](mailto:ocama12@gmail.com)
+- Paulo Henrique de Sousa – RM564262 – [pauloo.sousa16@outlook.com](mailto:pauloo.sousa16@outlook.com)
+- Renan Danilo dos Santos Pereira – RM566175 – [renansantos4978@gmail.com](mailto:renansantos4978@gmail.com)
 
-## 🔌 Ligações do Circuito
+## 👩‍🏫 Professores:
+### Tutor(a):
+- Lucas Gomes Moreira  
+### Coordenador(a):
+- André Godoi Chiovato  
+---
+
+## 💡 Descrição
+
+Este projeto foi desenvolvido como parte da atividade prática da Fase 4 da disciplina de Inteligência Artificial da FIAP, em parceria com a empresa Hermes Reply. O objetivo é simular um sistema básico de **monitoramento industrial** com foco em temperatura e umidade, utilizando o microcontrolador **ESP32** e o sensor **DHT22** na plataforma **Wokwi**.
+
+---
+
+## 🎯 Objetivos do Projeto
+
+* Simular um ambiente industrial com coleta de dados ambientais.
+* Utilizar o sensor DHT22 para medir temperatura e umidade.
+* Visualizar os dados no Monitor Serial.
+* Analisar estatisticamente os dados coletados.
+* Representar as variações em gráfico.
+* Documentar o circuito e código-fonte no GitHub.
+
+---
+
+## 🔌 Componentes Simulados
+
+* **Placa ESP32**
+* **Sensor de Temperatura e Umidade DHT22**
+* **Plataforma Wokwi (simulação do circuito)**
+
+---
+
+## 🧠 Lógica de Funcionamento
+
+* O ESP32 inicializa e realiza leituras periódicas (a cada 2s) do DHT22.
+* Os dados lidos (temperatura e umidade) são enviados ao **Monitor Serial**.
+* Os valores são registrados e utilizados para **análise e visualização estatística**.
+
+### 📋 Ligações do Circuito
+
 | Pino do DHT22 | Pino do ESP32 |
 |---------------|----------------|
 | VCC           | 3V3            |
 | DATA (SDA)    | GPIO 15        |
 | GND           | GND            |
 
-## 📄 Código-fonte (Arduino)
+---
+
+## 📄 Código-Fonte (Arduino/C++)
+
 ```cpp
 #include "DHT.h"
 
@@ -52,24 +97,46 @@ void loop() {
 }
 ```
 
-## 📊 Dados Simulados
-Foram registrados 10 valores simulando a leitura do sensor em um ambiente estável. Os dados estão salvos em `dados_simulados_dht22.csv`.
+---
 
-## 📈 Gráfico Gerado
-O gráfico a seguir representa as variações de temperatura e umidade ao longo do tempo:
+## 📊 Análise e Gráfico
+
+* Foram simuladas **10 leituras sequenciais**.
+* Os dados foram registrados no arquivo `dados_simulados_dht22.csv`.
+* A temperatura variou entre **24.0 °C e 24.7 °C**.
+* A umidade oscilou entre **38.5% e 40.0%**.
+
+### 📈 Gráfico de Variação
 
 ![Gráfico de Dados](grafico.png)
 
-## 📃 Análise dos Dados
-Durante o período simulado, observou-se uma variação suave e estável tanto na temperatura quanto na umidade. A temperatura permaneceu entre 24.0 °C e 24.7 °C, enquanto a umidade oscilou levemente de 40.0% para 38.5%. Esse comportamento é típico de um ambiente industrial climatizado, simulando com fidelidade um sistema real de coleta de dados ambientais.
+---
 
 ## 📷 Imagens do Projeto
-- Circuito completo com sensor DHT22 (`imagens/circuito.png`)
-- Monitor Serial exibindo os dados (`imagens/monitor_serial.png`)
 
-## 🔹 Conclusão
-Este projeto demonstra de forma simples e funcional como integrar sensores a sistemas embarcados utilizando o ESP32, simulando um cenário real de monitoramento ambiental industrial.
+* Circuito simulado na Wokwi: `imagens/circuito.png`
+* Captura do Serial Monitor: `imagens/monitor_serial.png`
 
 ---
 
-Desenvolvido como parte do desafio Hermes Reply - Fase 4.
+## 💻 Estrutura do Projeto
+
+```
+MonitoramentoESP32/
+├── imagens/
+│   ├── circuito.png
+│   └── monitor_serial.png
+├── dados_simulados_dht22.csv
+├── main.ino
+├── diagram.json
+├── platformio.ini
+├── README.md
+```
+
+---
+
+## ✅ Status Final
+
+Entrega concluída com êxito, com todos os requisitos da proposta Hermes Reply atendidos. Projeto funcional, documentado e pronto para apresentação.
+
+---
